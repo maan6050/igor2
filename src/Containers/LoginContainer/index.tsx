@@ -36,7 +36,7 @@ class LoginContainer extends React.Component<Props, State> {
 
         Auth.signIn(username, password)
           .then(user => {
-            const { history, location } = this.props;
+            const { history } = this.props; /*  , location  */
             /*if ('state' in location && 'from' in location.state) {
               const { from } = location.state
             } else {*/
